@@ -17,6 +17,10 @@
 		11269F6424B9C9A9000DA3D8 /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11269F6324B9C9A9000DA3D8 /* ASButton.swift */; };
 		11CC7E2424B9E67900036362 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC7E2324B9E67900036362 /* Constants.swift */; };
 		11E92E8224BA2B5500452026 /* ASUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92E8124BA2B5500452026 /* ASUITextField.swift */; };
+		11FA02D824BB8EA000AD3816 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA02D724BB8E9F00AD3816 /* RoundedImageView.swift */; };
+		11FA02DC24BB9AB300AD3816 /* EXAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA02DB24BB9AB300AD3816 /* EXAuthViewController.swift */; };
+		11FA02DF24BB9BB900AD3816 /* ASExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA02DE24BB9BB900AD3816 /* ASExtension.swift */; };
+		11FA02E124BBA11300AD3816 /* RoundableImageViewIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FA02E024BBA11300AD3816 /* RoundableImageViewIB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		11269F6324B9C9A9000DA3D8 /* ASButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASButton.swift; sourceTree = "<group>"; };
 		11CC7E2324B9E67900036362 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11E92E8124BA2B5500452026 /* ASUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASUITextField.swift; sourceTree = "<group>"; };
+		11FA02D724BB8E9F00AD3816 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		11FA02DB24BB9AB300AD3816 /* EXAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXAuthViewController.swift; sourceTree = "<group>"; };
+		11FA02DE24BB9BB900AD3816 /* ASExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASExtension.swift; sourceTree = "<group>"; };
+		11FA02E024BBA11300AD3816 /* RoundableImageViewIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableImageViewIB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 				11269F5F24B9ADAC000DA3D8 /* AssetFiles */,
 				11269F5424B9AC81000DA3D8 /* Assets.xcassets */,
 				11269F6024B9B00F000DA3D8 /* CustomUI */,
+				11CC7E2324B9E67900036362 /* Constants.swift */,
 				11269F4924B9AC7D000DA3D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +78,7 @@
 			children = (
 				11269F4B24B9AC7D000DA3D8 /* AppDelegate.swift */,
 				11269F4F24B9AC7D000DA3D8 /* ViewController.swift */,
+				11269F6124B9B0A0000DA3D8 /* AuthViewController.swift */,
 				11269F5924B9AC81000DA3D8 /* Info.plist */,
 			);
 			path = authenticationApp;
@@ -87,12 +97,38 @@
 		11269F6024B9B00F000DA3D8 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				11269F6124B9B0A0000DA3D8 /* AuthViewController.swift */,
 				11269F6324B9C9A9000DA3D8 /* ASButton.swift */,
-				11CC7E2324B9E67900036362 /* Constants.swift */,
 				11E92E8124BA2B5500452026 /* ASUITextField.swift */,
+				11FA02E024BBA11300AD3816 /* RoundableImageViewIB.swift */,
+				11FA02D724BB8E9F00AD3816 /* RoundedImageView.swift */,
+				11FA02D924BB9A7300AD3816 /* Extensions */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		11FA02D924BB9A7300AD3816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11FA02DD24BB9B7600AD3816 /* UI */,
+				11FA02DA24BB9A8700AD3816 /* AS */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11FA02DA24BB9A8700AD3816 /* AS */ = {
+			isa = PBXGroup;
+			children = (
+				11FA02DB24BB9AB300AD3816 /* EXAuthViewController.swift */,
+			);
+			path = AS;
+			sourceTree = "<group>";
+		};
+		11FA02DD24BB9B7600AD3816 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11FA02DE24BB9BB900AD3816 /* ASExtension.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FA02E124BBA11300AD3816 /* RoundableImageViewIB.swift in Sources */,
+				11FA02D824BB8EA000AD3816 /* RoundedImageView.swift in Sources */,
 				11269F6224B9B0A0000DA3D8 /* AuthViewController.swift in Sources */,
 				11269F5024B9AC7D000DA3D8 /* ViewController.swift in Sources */,
 				11269F6424B9C9A9000DA3D8 /* ASButton.swift in Sources */,
 				11269F4C24B9AC7D000DA3D8 /* AppDelegate.swift in Sources */,
+				11FA02DF24BB9BB900AD3816 /* ASExtension.swift in Sources */,
 				11E92E8224BA2B5500452026 /* ASUITextField.swift in Sources */,
 				11269F4E24B9AC7D000DA3D8 /* SceneDelegate.swift in Sources */,
+				11FA02DC24BB9AB300AD3816 /* EXAuthViewController.swift in Sources */,
 				11CC7E2424B9E67900036362 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,14 +38,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ayk-Jw-pFO" customClass="RoundableImageViewIB" customModule="authenticationApp" customModuleProvider="target">
+                                <rect key="frame" x="112.66666666666669" y="231" width="150" height="150"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fLc-bB-jnE"/>
+                                    <constraint firstAttribute="height" constant="150" id="g9D-T6-nhP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="h46-i3-EEv" secondAttribute="trailing" constant="30" id="5Dw-YW-GOD"/>
                             <constraint firstItem="h46-i3-EEv" firstAttribute="top" secondItem="kHB-iP-jrc" secondAttribute="bottom" constant="60" id="Ei9-x4-CXG"/>
                             <constraint firstItem="HZv-5n-5pv" firstAttribute="height" secondItem="kHB-iP-jrc" secondAttribute="height" id="Tym-vR-LPR"/>
                             <constraint firstItem="cea-TS-C4M" firstAttribute="trailing" secondItem="kHB-iP-jrc" secondAttribute="trailing" constant="46" id="WOI-Uq-Ysf"/>
                             <constraint firstItem="HZv-5n-5pv" firstAttribute="trailing" secondItem="kHB-iP-jrc" secondAttribute="trailing" id="YRp-qb-Q8v"/>
+                            <constraint firstItem="ayk-Jw-pFO" firstAttribute="centerY" secondItem="bxt-3V-B9a" secondAttribute="centerY" constant="-100" id="bgH-OA-w05"/>
+                            <constraint firstItem="ayk-Jw-pFO" firstAttribute="centerX" secondItem="bxt-3V-B9a" secondAttribute="centerX" id="ftC-DD-VMq"/>
                             <constraint firstAttribute="bottom" secondItem="h46-i3-EEv" secondAttribute="bottom" constant="60" id="iMR-Mo-T0o"/>
                             <constraint firstItem="HZv-5n-5pv" firstAttribute="leading" secondItem="kHB-iP-jrc" secondAttribute="leading" id="icI-PA-uID"/>
                             <constraint firstItem="h46-i3-EEv" firstAttribute="leading" secondItem="bxt-3V-B9a" secondAttribute="leading" constant="46" id="l6G-xs-TOY"/>
@@ -60,4 +79,7 @@
             <point key="canvasLocation" x="-151.19999999999999" y="-61.330049261083744"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
 </document>
